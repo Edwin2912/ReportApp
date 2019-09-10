@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+        <item
+            android:id ="@+id/nav_report_Maintenance_1"
+            android:title="@string/Report_Maintenance"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:layout_centerVertical="true"/>
+
+    <item
+        android:id ="@+id/nav_report__Emergency"
+        android:title="@string/Report_Emergency"
+        android:icon="@drawable/ic_add_alert_black_24dp"
+        android:layout_centerVertical="true"/>
+        <item
+            android:id ="@+id/nav_help_1"
+            android:title="@string/Help"
+            android:icon="@drawable/ic_announcement_black_24dp"
+            android:layout_centerVertical="true"/>
+
+        <item
+            android:id ="@+id/nav_logout"
+            android:title="@string/Logout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:layout_centerVertical="true"/>
+    <item
+        android:id ="@+id/nav_Report_Status"
+        android:title="@string/Report_Status"
+        android:icon="@drawable/report"
+        android:layout_centerVertical="true"/>
+
+    <item
+        android:id ="@+id/nav_Users"
+        android:title="@string/Users"
+        android:icon="@drawable/ic_group_add_black_24dp"
+        android:layout_centerVertical="true"/>
+
+    <!--<item-->
+        <!--android:id ="@+id/nav_Blackboard"-->
+        <!--android:title="@string/BlackBoard"-->
+        <!--android:icon="@drawable/ic_school_black_24dp"-->
+        <!--android:layout_centerVertical="true"/>-->
+
+
+
+
+
+</menu>

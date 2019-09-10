@@ -1,0 +1,211 @@
+<resources>
+    <string name="app_name">UJ Report System</string>
+    <string name="User_Name">Please enter your name</string>
+    <string name="User_Surname">Please enter your surname </string>
+    <string name="User_Email">Please enter your email address</string>
+    <string name="User_Password">Please enter your password</string>
+    <string name="New_User_Password">Please enter new password</string>
+    <string name="User_Password_reenter">Please re-enter your Password </string>
+    <string name="User_pic">Please upload a profile picture</string>
+    <string name="Upload">Upload_picture</string>
+    <string name="Reports">Show All Reports</string>
+    <string name="Play_Video">Play Video</string>
+    <string name="Capture_Video">Capture Video</string>
+    <string name="Take_Pic">Take A Picture</string>
+    <string name="student_number">Please enter your student number</string>
+    <string name="Message">Message</string>
+    <string name="Submit">Submit</string>
+    <string name="user_name">Please enter your user name</string>
+    <string name="Help">Help</string>
+    <string name="Logout">Logout</string>
+    <string name="input_error_name">student number required</string>
+    <string name="input_error_student_number">invalid student number</string>
+    <string name="input_username">invalid username</string>
+    <string name="input_password">invalid password</string>
+    <string name="input_required">input required</string>
+    <string name="new_password">new password</string>
+    <string name="Phone_Nr">Please enter your phone number</string>
+    <string name="input_error_email">email required</string>
+    <string name="input_error_password">password required</string>
+    <string name="input_error_password_match">passwords do not match</string>
+    <string name="input_error_phone">phone required</string>
+    <string name="input_error_password_length">password should be atleast 6 characters long</string>
+    <string name="input_error_phone_invalid">enter a valid phone number</string>
+    <string name="registration_success">Registered Successfully</string>
+    <string name="input_error_email_invalid">enter a valid email</string>
+    <string name="Report_Status">Report Status</string>
+    <string name="Report_Emergency">Report Emergency</string>
+    <string name="Report_Maintenance">Report Maintenance</string>
+    <string name="Emergency">Emergency Reports</string>
+    <string name="Maintenance">Maintenance Reports </string>
+    <string name="MyEmergency">My Emergency Reports</string>
+    <string name="MyMaintenance">My Maintenance Reports </string>
+    <string name="Home">Home</string>
+    <string name="Remember_me">Remember me</string>
+    <string name="Description">Description</string>
+    <string name="Report_Date">Report Date</string>
+    <string name="Camera">Camera</string>
+    <string name="Login">Login</string>
+    <string name="User">User</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="Profile_Pic">Profile Pic</string>
+    <string name="Profile">Profile</string>
+    <string name="gallery">Gallery</string>
+    <string name="BlackBoard">BlackBoard</string>
+    <string name="email">Email :</string>
+    <string name="phone_Nr">Phone Nr :</string>
+    <string name="Student_Nr">Student Nr :</string>
+    <string name="Role">Role :</string>
+    <string name="Medical_info">Family Medical info</string>
+    <string name="Family_doctor_Name">Family doctor Name </string>
+    <string name="Family_doctor_Telephone">Family Doctor Telephone Number</string>
+    <string name="Guardians_email">Guardian/parents/s email </string>
+    <string name="Guardians_telephone">Guardians telephone	numbers</string>
+    <string name="family_medical_aid_name">Family Medical Aid Name</string>
+    <string name="family_medical_aid_plan">Family_Medical_Aid Plan</string>
+    <string name="family_medical_aid_aid_number">Family Medical Aid Number</string>
+    <string name="user_allergies">Allergies	of	the	learner</string>
+    <string name="OR">OR</string>
+    <string name="login">LOGIN</string>
+    <string name="Register">REGISTER</string>
+    <string name="Rest_Pass">REST PASSWORD</string>
+    <string name="Users">Users</string>
+    <string name="EMS">Emergency Message</string>
+    <string name="Emergency_Conntact">Emergency conntact list</string>
+    <string name="EMS11">Send to all emergency contacts</string>
+    <string name="Select">Select Contact</string>
+    <string name="Contact">Contact Name</string>
+    <string name="Contact_Nr">Contact Numbers</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Reporter">Reporter</string>
+
+    <string name="title_activity_news">News</string>
+    <string name="Status">Status</string>
+
+    <string name="Change_Status">Change Status</string>
+
+    <string name="Resolve">Resolve</string>
+
+    <string name="Url">Url</string>
+
+    <string name="Save">Save</string>
+
+    <string name="Update">Update</string>
+
+    <string name="Accept">Accept</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Warning">You are about to send a distress message to your emergency contacts.</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Send_Ems">Send SOS ?</string>
+    <string name="title_activity_school__info">School_Info</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="Exit">Are you sure you want to exit?</string>
+    <string name="Protection_Services">Protection Services</string>
+    <string name="Campus_Health_Service">Campus Health Service</string>
+    <string name="hour_crisis_lines">24 hour crisis lines</string>
+    <string name="Hospitals">Hospitals</string>
+    <string name="protection_services">Protection_Services</string>
+    <string name="APB_protection">APB tel:+27 11 559 1312</string>
+    <string name="APK_protection">APK tel:+27 11 559 2555</string>
+    <string name="DFC_protection">DFC tel:+27 11 559 6450</string>
+    <string name="SWC_protection">SWC tel:+27 11 559 5555</string>
+    <string name="APB_health">APB tel:+27 11 559 1238</string>
+    <string name="APK_health">APK tel:+27 11 559 3837</string>
+    <string name="DFC_health">DFC tel:+27 11 559 5571</string>
+    <string name="SWC_health">SWC tel:+27 11 559 5571</string>
+    <string name="PsyCaD_crisis">PsyCaD tel:+27 80 077 7000</string>
+    <string name="Flying_squad_crisis">Flying squad +27 10111</string>
+    <string name="NetcareHospital">Netcare +27 82111</string>
+    <string name="Milpark_Hospital">Milpark Hospital tel:+27 11 480 5600</string>
+    <string name="Garden_Hospital">Garden City Hospital tel:+27 11 437 5000</string>
+    <string name="Helen_Joseph_Hospital">Helen Joseph Hospital tel:+27 11 489 1011</string>
+    <string name="Meldene_Medicross_Hospital">Meldene Medicross tel:+27 114 822291</string>
+    <string name="APB_protection_Tell">tel:+27115591312</string>
+    <string name="APK_protection_Tell">tel:+27115592555</string>
+    <string name="DFC_protection_Tell">tel:+27115596450</string>
+    <string name="SWC_protection_Tell">tel:+27115595555</string>
+    <string name="APB_health_Tell">tel:+27115591238</string>
+    <string name="APK_health_Tell">tel:+27115593837</string>
+    <string name="DFC_health_Tell">tel:+27115595571</string>
+    <string name="SWC_health_Tell">tel:+27115595571</string>
+    <string name="PsyCaD_crisis_Tell">tel:+27800777000</string>
+    <string name="Flying_squad_crisis_Tell">tel:+2710111</string>
+    <string name="NetcareHospital_Tell">tel:+2782111</string>
+    <string name="Milpark_Hospital_Tell">tel:+27114805600</string>
+    <string name="Garden_Hospital_Tell">tel:+27114375000</string>
+    <string name="Helen_Joseph_Hospital_Tell">tel:+27114891011</string>
+    <string name="Meldene_Medicross_Hospital__Tell">tel:+27114822291</string>
+    <string name="Location">Your current location coordinates</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="title_activity_helllllllo">Helllllllo</string>
+    <string-array name="Message">
+        <item>Your child is here to be picked up by someone please contact the school to confirm a few details</item>
+        <item>Your child is not feeling well please contact the school as soon as possible </item>
+        <item>Your child has been admitted to the hospital please contact the school for future details  </item>
+    </string-array>
+    <string-array name="Common_Titles">
+        <item>pipe leaking</item>
+        <item>broken equipment</item>
+        <item>More equipment is needed </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+    </string-array>
+    <string-array name="Emergency_Message">
+        <item>Please call me now it is urgent</item>
+        <item>I am hurt please help</item>
+        <item>In trouble please find me </item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="race">
+        <item>Black</item>
+        <item>White</item>
+        <item>Asian</item>
+        <item>Indian</item>
+        <item>Coloured</item>
+    </string-array>
+    <string-array name="Common_Description">
+        <item>Please select description...</item>
+        <item>There is a toilet leakage</item>
+        <item>A window is broken</item>
+        <item> light bulb is not switching on</item>
+        <item>Printer not functioning  </item>
+        <item>Toilet has a blockage</item>
+        <item> light bulb is not switching on</item>
+        <item> light bulb is not switching on</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="Emergency_Contacts">
+        <item>Mom</item>
+        <item>Dad</item>
+        <item>Sister</item>
+        <item>Uncle</item>
+        <item>Brother</item>
+        <item>Grandmother</item>
+        <item>Grandfather</item>
+    </string-array>
+    <string-array name="User_Roles">
+        <item>None(Default)</item>
+        <item>Student</item>
+        <item>Admin </item>
+        <item>Master</item>
+    </string-array>
+    <string-array name="Report_Status">
+        <item>None(Default)</item>
+        <item>Resolved</item>
+        <item>Being Attended</item>
+        <item>In Progress</item>
+    </string-array>
+    <string-array name="reports">
+        <item>Show	all	reports</item>
+        <item>Show	unresolved	reports</item>
+        <item>Show	resolved	reports</item>
+    </string-array>
+</resources>

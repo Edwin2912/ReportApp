@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "792189453682",
+    "firebase_url": "https://ujreportsystem.firebaseio.com",
+    "project_id": "ujreportsystem",
+    "storage_bucket": "ujreportsystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792189453682:android:4ebec341af29010a",
+        "android_client_info": {
+          "package_name": "com.example.system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792189453682-hmlmpeoatsj7s5bvnjgplmsfbo2f0llu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.system",
+            "certificate_hash": "a68d2137189eda53a9870b9cbbdc120cd3571edb"
+          }
+        },
+        {
+          "client_id": "792189453682-td22i7e2osn812p46p5d8ipaue72aek5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc8LKIBsLAhjihUijV6ckdxiuB0Hyf9K8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792189453682-td22i7e2osn812p46p5d8ipaue72aek5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

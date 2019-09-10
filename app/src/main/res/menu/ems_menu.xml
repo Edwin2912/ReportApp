@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+
+    <item android:title="Menu"
+        app:showAsAction="always"
+        android:background="@color/colorPrimary">
+
+    <menu  android:background="@color/colorPrimary">
+
+    <item android:id="@+id/police"
+
+        android:title="Call Police"
+        android:icon="@drawable/ic_police"
+        android:textColor="@color/White"/>
+
+    <item android:id="@+id/ambulance"
+        android:title="Call Ambulance"
+        android:icon="@drawable/ic_ambulance"
+        android:textColor="@color/White"/>
+
+    <item android:id="@+id/fire"
+        android:title="Call Fire Department"
+        android:icon="@drawable/fire_three"
+        android:textColor="@color/White"/>
+
+    <item android:id="@+id/security"
+        android:title="Call Campus Security"
+        android:icon="@drawable/ic_popop_man"
+        android:textColor="@color/White"
+        />
+        <item android:id="@+id/personal_details"
+            android:title="Medical Details"
+            android:icon="@drawable/personal_details"
+            android:textColor="@color/White"
+            />
+
+    </menu>
+    </item>
+
+</menu>

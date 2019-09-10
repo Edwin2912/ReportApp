@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.system.Login_Activity">
+
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pass"
+        android:layout_width="339dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="200dp"
+        android:textColorHint="@color/White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/White">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="240dp"
+            android:drawableRight="@drawable/ic_lock_black_24dp"
+            android:ems="10"
+            android:hint="@string/User_Password"
+            android:inputType="textPassword"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            android:textColorLink="@color/White"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toStartOf="parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView_UJ_Logo"
+        android:layout_width="332dp"
+        android:layout_height="187dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/uj_logo_" />
+
+    <Button
+        android:id="@+id/Btn_login"
+        android:layout_width="127dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_curves"
+        android:onClick="Buttons"
+        android:text="@string/Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_Register"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889" />
+
+    <Button
+        android:id="@+id/Btn_Register"
+        android:layout_width="129dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_curves"
+        android:onClick="Buttons"
+        android:text="@string/Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+
+    <!--<EditText-->
+    <!--android:id="@+id/Txt_password"-->
+    <!--android:layout_width="291dp"-->
+    <!--android:layout_height="43dp"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginBottom="240dp"-->
+    <!--android:drawableLeft="@drawable/ic_lock_black_24dp"-->
+    <!--android:ems="10"-->
+    <!--android:hint="@string/password"-->
+    <!--android:inputType="textPassword"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.586"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!-- <EditText
+         android:id="@+id/Txt_username7"
+         android:layout_width="346dp"
+         android:layout_height="60dp"
+         android:layout_marginStart="8dp"
+         android:layout_marginEnd="8dp"
+         android:layout_marginBottom="316dp"
+         android:drawableLeft="@drawable/ic_person_black_24dp"
+         android:ems="10"
+         android:hint="@string/username"
+         android:inputType="textPersonName"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.489"
+         app:layout_constraintStart_toStartOf="parent" />-->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="340dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="308dp"
+        android:textColorHint="@color/White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleTint="@color/White">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Txt_useremail"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="240dp"
+            android:drawableRight="@drawable/ic_person_white_24dp"
+            android:ems="10"
+            android:hint="@string/user_name"
+            android:inputType="textPersonName"
+            android:textColor="@color/White"
+            android:textColorHighlight="@color/White"
+            android:textColorHint="@color/White"
+            android:textColorLink="@color/White"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toStartOf="parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <CheckBox
+        android:id="@+id/checkBoxRemeberMe"
+        android:layout_width="146dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="144dp"
+        android:text="@string/Remember_me"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_ems"
+        android:layout_width="73dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_heart"
+        app:layout_constraintBottom_toBottomOf="@+id/videoView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtForgot_Password"
+        android:layout_width="151dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:text="@string/forgot_password"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_login"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxRemeberMe"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

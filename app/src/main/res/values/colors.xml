@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="White">#FFFFFF</color>
+
+
+    <color name="DeepOrange1">#FF6E40</color>
+    <color name="DeepOrange2">#FF3D00</color>
+    <color name="DeepOrange3">#DD2C00</color>
+    <color name="DeepOrange4">#FF8240</color>
+    <color name="Red">#FF0000</color>
+
+
+    <color name="DeepOra4">#a7a7a7</color>
+
+</resources>
