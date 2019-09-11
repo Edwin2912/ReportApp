@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorPrimary"
-    tools:context="com.example.system.My_Maintenance_Retrieve">
+    tools:context=".My_Maintenance_Retrieve">
 
 
     <ListView

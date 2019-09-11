@@ -14,6 +14,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -52,6 +53,12 @@ public class My_Emergency_Reports_Retrieve extends AppCompatActivity
         database=firebaseDatabase.getReference("Emergency Reports");
         user = FirebaseAuth.getInstance().getCurrentUser();
         userlist = new ArrayList<>();
+        ActionBar actionBar = getSupportActionBar();
+        // actionBar.setIcon(R.mipmap.report);
+        actionBar.setTitle("My Emergency Reports");
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+
         progressDialog = new ProgressDialog(this);
         emergency_reports_list_list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

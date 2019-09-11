@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -55,6 +56,14 @@ public class Profile extends AppCompatActivity
         mAuth = FirebaseAuth.getInstance();
         image=findViewById(R.id.profile_image) ;
         capture = findViewById(R.id.btnCapture);
+
+
+        ActionBar actionBar = getSupportActionBar();
+        // actionBar.setIcon(R.mipmap.report);
+        actionBar.setTitle("My Profile");
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+
         capture.setOnClickListener(new View.OnClickListener()
         {
             @Override

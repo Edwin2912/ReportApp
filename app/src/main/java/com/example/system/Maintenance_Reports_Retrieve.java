@@ -14,6 +14,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
@@ -50,6 +51,12 @@ public class Maintenance_Reports_Retrieve extends AppCompatActivity
         userlist = new ArrayList<>();
         progressDialog = new ProgressDialog(this);
 
+        ActionBar actionBar = getSupportActionBar();
+        // actionBar.setIcon(R.mipmap.report);
+        actionBar.setTitle("Maintenance Reports");
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+
 
         Maintenance_reports_list_list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -62,6 +69,7 @@ public class Maintenance_Reports_Retrieve extends AppCompatActivity
                 in.putExtra("Reporter",maintenance_report.getReporter());
                 in.putExtra("Status",maintenance_report.getStatus());
                 in.putExtra("ImageUrl",maintenance_report.getimageUrl());
+                in.putExtra("Back","Back To Reports");
 
 
                 startActivity(in);

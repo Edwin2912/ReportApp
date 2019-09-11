@@ -11,11 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Sello"></activity>
-        <activity
-            android:name=".My_Maintenance_Retrieve"
-            android:label="@string/title_activity_helllllllo"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".My_Maintenance_Retrieve"></activity>
         <activity
             android:name=".News"
             android:label="@string/title_activity_news"

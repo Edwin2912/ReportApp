@@ -63,8 +63,9 @@ public class Select_Report extends AppCompatActivity
             public void onClick(View view)
             {
                 try
-                {
-                    startActivity(new Intent(context, Sello.class));
+                {//My_Maintenance_Retrieve
+                    startActivity(new Intent(context, My_Maintenance_Retrieve.class));
+                    //startActivity(new Intent(context, My_Maintenance_Retrieve.class));
                     overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity);
                 }catch(Exception ex)
                 {

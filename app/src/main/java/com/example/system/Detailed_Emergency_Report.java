@@ -22,34 +22,33 @@ import com.google.firebase.storage.FileDownloadTask;
 
 import java.io.File;
 
-public class Detailed_Emergency_Report extends AppCompatActivity
-{
+public class Detailed_Emergency_Report extends AppCompatActivity {
 
 
-    TextView description,reporter,reporeted_date,status;
+    TextView description, reporter, reporeted_date, status;
     VideoView videoView;
     Uri uri;
     String Back_To_My_Reports;
     private ProgressDialog progressDialog;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_detailed__emergency__report);
 
         videoView = findViewById(R.id.videoView_detailed_emergency);
-        description=findViewById(R.id.txt_ems_description);
-        reporter= findViewById(R.id.txt_ems_reporter);
-        reporeted_date= findViewById(R.id.Txt_ems_report_date_reported);
-        status= findViewById(R.id.txt_ems_status);
+        description = findViewById(R.id.txt_ems_description);
+        reporter = findViewById(R.id.txt_ems_reporter);
+        reporeted_date = findViewById(R.id.Txt_ems_report_date_reported);
+        status = findViewById(R.id.txt_ems_status);
 
         Intent i = this.getIntent();
-        String Description=i.getExtras().getString("Description");
-        String Reporter=i.getExtras().getString("Reporter");
-        String Date_Reported=i.getExtras().getString("Date Reported");
-        String Status=i.getExtras().getString("Status");
-        String VideoUrl=i.getExtras().getString("Video");
-        Back_To_My_Reports=i.getExtras().getString("Back");
+        String Description = i.getExtras().getString("Description");
+        String Reporter = i.getExtras().getString("Reporter");
+        String Date_Reported = i.getExtras().getString("Date Reported");
+        String Status = i.getExtras().getString("Status");
+        String VideoUrl = i.getExtras().getString("Video");
+        Back_To_My_Reports = i.getExtras().getString("Back");
         uri = Uri.parse(VideoUrl);
 
         description.setText(Description);
@@ -59,19 +58,14 @@ public class Detailed_Emergency_Report extends AppCompatActivity
 
         progressDialog = new ProgressDialog(this);
 
-        videoView.setOnClickListener(new View.OnClickListener()
-        {
+        videoView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                try
-                {
+            public void onClick(View view) {
+                try {
                     videoView.setVideoURI(uri);
                     videoView.requestFocus();
                     videoView.start();
-                }
-                catch(Exception ex)
-                {
+                } catch (Exception ex) {
                     Toast toast = Toast.makeText(Detailed_Emergency_Report.this, "No recorded video", Toast.LENGTH_SHORT);
                     toast.setGravity(Gravity.CENTER, 0, 0);
                     toast.show();
@@ -79,12 +73,11 @@ public class Detailed_Emergency_Report extends AppCompatActivity
             }
         });
 
-       // Glide.with(getApplicationContext()).load(VideoUrl).;
+        // Glide.with(getApplicationContext()).load(VideoUrl).;
     }
 
     @Override
-    protected void onStart()
-    {
+    protected void onStart() {
         super.onStart();
 
         progressDialog.setTitle("Please Wait");
@@ -92,18 +85,15 @@ public class Detailed_Emergency_Report extends AppCompatActivity
         progressDialog.show();
         progressDialog.dismiss();
 
-        try
-        {
+        try {
 
-            progressDialog.setTitle("Please wait");
-            progressDialog.show();
+           // progressDialog.setTitle("Please wait");
+           // progressDialog.show();
             videoView.setVideoURI(uri);
             videoView.requestFocus();
-            progressDialog.setMessage("Loading Video.....");
+            //progressDialog.setMessage("Loading Video.....");
             videoView.start();
-        }
-        catch(Exception ex)
-        {
+        } catch (Exception ex) {
             Toast toast = Toast.makeText(Detailed_Emergency_Report.this, "No recorded video", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();
@@ -111,26 +101,27 @@ public class Detailed_Emergency_Report extends AppCompatActivity
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-        getMenuInflater().inflate(R.menu.back1,menu);
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.back1, menu);
         return super.onCreateOptionsMenu(menu);
     }
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        switch (item.getItemId())
-        {
-            case R.id.Back:
-                if (Back_To_My_Reports.equalsIgnoreCase("Back To My Reports Emergency Reports"))
-                {
-                    startActivity(new Intent(this,My_Emergency_Reports_Retrieve.class));
-                    overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_right_activity);
 
-                }
-                else
-                {
-                    startActivity(new Intent(this,Emergency_Reports_Retrieve.class));
-                    overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_right_activity);
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.Back:
+                try {
+
+
+                    if (Back_To_My_Reports.equalsIgnoreCase("Back To My Reports Emergency Reports") & Back_To_My_Reports != null) {
+                        startActivity(new Intent(this, My_Emergency_Reports_Retrieve.class));
+                        overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_right_activity);
+
+                    } else {
+                        startActivity(new Intent(this, Emergency_Reports_Retrieve.class));
+                        overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_right_activity);
+                    }
+                } catch (Exception e) {
+                    System.out.println("error :" + e.getMessage());
                 }
 
 

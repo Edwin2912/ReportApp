@@ -10,8 +10,6 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.bumptech.glide.Glide;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
 
 public class Detailed_Maintenance_Report extends AppCompatActivity
 {
@@ -68,7 +66,7 @@ public class Detailed_Maintenance_Report extends AppCompatActivity
 
                 if(Back_To_My_Reports.equalsIgnoreCase("Back To My Reports Maintenance Reports"))
                 {
-                    startActivity(new Intent(this,Sello.class));
+                    startActivity(new Intent(this, My_Maintenance_Retrieve.class));
                     overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_right_activity);
                 }
                 else

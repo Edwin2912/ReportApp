@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
@@ -51,6 +52,12 @@ public class Emergency_Reports_Retrieve extends AppCompatActivity
         userlist = new ArrayList<>();
         progressDialog = new ProgressDialog(this);
 
+        ActionBar actionBar = getSupportActionBar();
+        // actionBar.setIcon(R.mipmap.report);
+        actionBar.setTitle("Emergency Reports");
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+
         emergency_reports_list_list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
@@ -62,7 +69,7 @@ public class Emergency_Reports_Retrieve extends AppCompatActivity
                 in.putExtra("Reporter",emergency_report.getReporter());
                 in.putExtra("Status",emergency_report.getStatus());
                 in.putExtra("Video",emergency_report.getVideo());
-               // in.putExtra("Back","Back To My Reports Maintenance Reports");
+                in.putExtra("Back","Back To Reports");
 
                 startActivity(in);
                 overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity);
@@ -78,7 +85,7 @@ public class Emergency_Reports_Retrieve extends AppCompatActivity
         super.onStart();
 
         progressDialog.setTitle("Please Wait");
-        progressDialog.setMessage("....Loading Reports Emergency Reports....");
+        progressDialog.setMessage("Loading Reports....");
         progressDialog.show();
 
 

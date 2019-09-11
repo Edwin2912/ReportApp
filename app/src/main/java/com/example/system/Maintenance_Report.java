@@ -177,7 +177,8 @@ Context context=this;
             case R.id.Btn_Submit_Maintenance_Report:
 
 
-                if (image_path != null) {
+                if (image_path != null)
+                {
                     progressDialog.setTitle("Please wait");
                     progressDialog.setMessage("Uploading image.....");
                     progressDialog.show();
@@ -331,7 +332,6 @@ Context context=this;
         StorageMetadata metadata = new StorageMetadata.Builder().setCustomMetadata("caption", User_email + " : Maintenance Reports").build();
 
         UploadTask uploadTask = storageReference.putBytes(data, metadata);
-
         uploadTask.addOnCompleteListener(Maintenance_Report.this, new OnCompleteListener<UploadTask.TaskSnapshot>()
         {
 
@@ -364,7 +364,6 @@ Context context=this;
             }
         });
 
-
         getDownloadUriTask.addOnCompleteListener(Maintenance_Report.this, new OnCompleteListener<Uri>()
         {
             @Override
@@ -376,16 +375,12 @@ Context context=this;
 
                     try
                     {
-
-
                         SmsManager mm = SmsManager.getDefault();
                         mm.sendTextMessage("0712771026", null, "User Email : " + user.getEmail() + " Has report a maintenance on campus !. " + "Message states :" + message.getText().toString() + " " + "Link of the image reported :" +  imageUrl, null, null);
                         Toast toast = Toast.makeText(Maintenance_Report.this, "SMS has been sent to notify authorities", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER, 0, 0);
                         toast.show();
                         message.setText("");
-
-
 
                     } catch (Exception ex)
                     {
