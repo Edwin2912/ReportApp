@@ -66,7 +66,7 @@ public class Home_Activity extends AppCompatActivity implements NavigationView.O
     private long backPressedTime;
     String User_name;
     TextView userEmail;
-    Button chat,button_emergency_contacts;
+    Button button_uj_chat,blackboard,career24;
     ListView lvRss;
     ArrayList<String> titles;
     ArrayList<String> links;
@@ -83,25 +83,21 @@ public class Home_Activity extends AppCompatActivity implements NavigationView.O
         mToggle.syncState();
         lvRss = (ListView) findViewById(R.id.lvRss);
         userEmail = findViewById(R.id.Current_user_email);
-        button_emergency_contacts= findViewById(R.id.button_emergency_contacts);
+        button_uj_chat= findViewById(R.id.imageView6);
+        blackboard= findViewById(R.id.btn_blackboard);
+        career24= findViewById(R.id.btn_career24);
 
 
         titles = new ArrayList<String>();
         links = new ArrayList<String>();
 
-
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         NavigationView navigationView = (NavigationView) findViewById(com.example.system.R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        Animation animationOut = AnimationUtils.loadAnimation(this, android.R.anim.slide_out_right);
-        Animation animationIn = AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left);
-
-
         user = FirebaseAuth.getInstance().getCurrentUser();
         FirebaseMessaging fm = FirebaseMessaging.getInstance();
-        fm.send(new RemoteMessage.Builder(user.getUid().toString()+"selloedwin70@gmail.com")
+        fm.send(new RemoteMessage.Builder(user.getUid().toString()+"a@gmail.com")
                 .setMessageId(Integer.toString(0))
                 .addData("my message","hello")
                 .addData("my action","test 1").build());
@@ -125,19 +121,40 @@ public class Home_Activity extends AppCompatActivity implements NavigationView.O
         }
 
         ActionBar actionBar = getSupportActionBar();
-        // actionBar.setIcon(R.mipmap.preschool);
         actionBar.setTitle("Welcome : " + User_name);
-       // userEmail.setText(User_name);
 
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 
 
-        button_emergency_contacts.setOnClickListener(new View.OnClickListener() {
+        button_uj_chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
             {
-                Emergency_Contacts();
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://www.uj.ac.za/Pages/uj-chat.aspx"));
+                startActivity(intent);
+               overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity);
+            }
+        });
+        career24.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://www.careers24.com/"));
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity);
+            }
+        });
+        blackboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://uj.blackboard.com/ultra/stream"));
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity);
             }
         });
 
@@ -166,9 +183,10 @@ public class Home_Activity extends AppCompatActivity implements NavigationView.O
     {
         if (item.getItemId()== R.id.nav_help_1)
         {
-            Intent help_1 = new Intent(context,Help.class);
-            startActivity(help_1);
-            overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity);
+            Emergency_Contacts();
+//            Intent help_1 = new Intent(context,Help.class);
+//            startActivity(help_1);
+//            overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity);
         }
 
         if (item.getItemId()==R.id.nav_report_Maintenance_1)
@@ -204,7 +222,6 @@ public class Home_Activity extends AppCompatActivity implements NavigationView.O
             Intent Select_Report = new Intent(context, Emergency_Report.class);
             startActivity(Select_Report);
             overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity);
-
         }
 
 //        if (item.getItemId()==R.id.nav_Blackboard)
@@ -215,7 +232,6 @@ public class Home_Activity extends AppCompatActivity implements NavigationView.O
 //            overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity);
 //
 //        }
-
 
         if (item.getItemId()==R.id.nav_Users)
         {
@@ -317,6 +333,16 @@ public class Home_Activity extends AppCompatActivity implements NavigationView.O
         LayoutInflater inflater = LayoutInflater.from(this);
         View view = inflater.inflate(R.layout.emergency_contacts_layout, null);
         AlertDialog alertDialog = new AlertDialog.Builder(this,android.R.style.Theme_DeviceDefault_Light).setView(view).create();
+        Button close=view.findViewById(R.id.btn_close_dialog);
+
+        close.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                alertDialog.dismiss();
+            }
+        });
 
         TextView PsyCaD = view.findViewById(R.id.textView43);
         TextView Flying_Squad = view.findViewById(R.id.textView44);
