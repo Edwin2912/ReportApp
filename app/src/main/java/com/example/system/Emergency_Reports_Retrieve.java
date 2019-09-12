@@ -69,7 +69,7 @@ public class Emergency_Reports_Retrieve extends AppCompatActivity
                 in.putExtra("Reporter",emergency_report.getReporter());
                 in.putExtra("Status",emergency_report.getStatus());
                 in.putExtra("Video",emergency_report.getVideo());
-                in.putExtra("Back","Back To Reports");
+                in.putExtra("Back","Back To Emergency Reports");
 
                 startActivity(in);
                 overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity);

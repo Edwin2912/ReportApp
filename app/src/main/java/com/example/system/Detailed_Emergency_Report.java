@@ -112,7 +112,8 @@ public class Detailed_Emergency_Report extends AppCompatActivity {
                 try {
 
 
-                    if (Back_To_My_Reports.equalsIgnoreCase("Back To My Reports Emergency Reports") & Back_To_My_Reports != null) {
+
+                    if (Back_To_My_Reports.equalsIgnoreCase("Back To Emergency Reports") & Back_To_My_Reports != null) {
                         startActivity(new Intent(this, My_Emergency_Reports_Retrieve.class));
                         overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_right_activity);
 
